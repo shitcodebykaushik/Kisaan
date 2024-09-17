@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Swadeshi</title>
+	
+	<meta charset="UTF-8" />
+	<meta name="description" content = "A user-friendly website for farmers, bridging the gap between farmers and consumer." />
+	<meta name="keywords" content="farmer, wholesaler, consumer, help, videos, login, signup, swadeshi, mandi, market, vegetables, fruits, grains, spices, food, village, price, Seed, Farm Machinery, Fertilizers, Soil Health, Pesticies, Market Price, Agromet Services, Crop information, Storage">
+	<meta name="theme-color" content="#f4f4f4">
+	<meta name="author" content="Kartik Soneji, Harsh Kapadia, Tushar Nankani">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<link rel = "icon" href = "../Assets/logo.png" sizes = "any" />
+	
+	<link rel="stylesheet" href="style.css" />
+	
+	<script defer="" src="util.js"></script>
+	<script defer="" src="translation.js"></script>
+	<script defer="" src="script.js"></script>
+	
+</head>
+
+<body id="body">
+	<nav style="background-color: #43A047; border-radius: 15px; padding: 10px;">
+		<img class="logo" src="../Assets/logo.png" alt="logo" />
+		
+		<ul style="list-style-type: none; margin: 0; padding: 0; display: flex; align-items: center;">
+			<li style="margin-right: 20px;"><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+			<li style="margin-right: 20px;"><a href="contact/index.html" style="color: white; text-decoration: none;">About Us +</a></li>
+			<li style="margin-right: 20px;"><a href="contact/index.html" style="color: white; text-decoration: none;">FAQs</a></li>
+			<li style="margin-right: 20px;"><a href="contact/index.html" style="color: white; text-decoration: none;">Contact Us</a></li>
+			<div class="text-s" style="display: flex; gap: 10px;">
+				<button onclick="fontInc()" style="background-color: transparent; border: none; cursor: pointer; color: white;">
+					<li class="textsize">A<sup>+</sup></li>
+				</button>
+				<button onclick="fontDec()" style="background-color: transparent; border: none; cursor: pointer; color: white;">
+					<li class="textsize">A<sup>-</sup></li>
+				</button>
+				<button onclick="toggleLanguage()" style="background-color: transparent; border: none; cursor: pointer; color: white;">
+					<li class="textsize">हिन्दी</li>
+				</button>
+			</div>
+		</ul>
+</nav>
+
+
+	<main>
+		<div>
+			<a href="index.html" id = "company-name">Kissan Connect</a>
+			<div id = "tagline">Connecting farmers everywhere.</div>
+		</div>
+
+		<div class="description">
+			<div class="farmer">
+				<h1>
+					For Farmers
+				</h1>
+				<div class="content">
+					Add your vegetables, fruits and pulses right away!
+				</div>
+			</div>
+			<div class="wholesale">
+				<h1>
+					For Wholesalers
+				</h1>
+				<div class="content">
+					For bulk orders and extra offers, sign up with us!
+				</div>
+			</div>
+		</div>
+		
+		<div class="enter-phone">
+			<div class="form">
+				<h2>Please enter your Phone Number</h2>
+			
+				<div class = "floating-label" id = "NumberWrapper">
+					<input
+						id = "Number"
+						type = "tel"
+						placeholder = "placeholder"
+						pattern="[0-9]{10}"
+						maxlength="10"
+						required=""
+					/>
+					<label for = "Number">Contact Number</label>
+				</div>
+				
+				<h5><sup>*</sup> A 4-digit OTP will be sent to your Phone Number</h5>
+
+				<div class = "floating-label hide" id = "OtpWrapper">
+					<input
+						id = "Otp"
+						type = "otp"
+						placeholder = "placeholder"
+						pattern="[0-9]{4}"
+						maxlength="4"
+						required=""
+					/>
+					<label for = "Otp">OTP</label>
+				</div>
+
+				<div class="btn">
+					<div class="sub-btn">
+						<button type="submit" id="Submit">SUBMIT</button>
+					</div>
+
+					<div class="hide">
+						<button id="Resend">Re-Send OTP</button>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+	</main>
+</body>
+
+</html>
